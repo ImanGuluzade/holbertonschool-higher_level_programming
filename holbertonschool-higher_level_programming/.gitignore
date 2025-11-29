@@ -1,12 +1,5 @@
+# Ignore system files
 *.history
-*.bashrc
-*.profile
-*.cache/
-*.ssh/
-.openvscode-server/
-holbertonschool-shell/
-my_school/
-not_here
-old_school/
-ready_to_be_removed/
-school/
+*.pyc
+*.swp
+*.DS_Store
