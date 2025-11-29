@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-str1 = "Welcome to "
-str2 = "Holberton School!"
-# this comment is required by the checker
-print(str1 + str2)
+str1 = "Holberton"
+str2 = "School"
+# This script prints Welcome message using str1 and str2
+print(f"Welcome to {str1} {str2}!")
