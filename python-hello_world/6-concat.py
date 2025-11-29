@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This script prints Welcome to Holberton School!
 str1 = "Welcome to "
 str2 = "Holberton School!"
+# print the full welcome message using str1 and str2
 print(str1 + str2)
