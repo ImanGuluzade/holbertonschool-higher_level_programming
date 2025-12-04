@@ -2,12 +2,12 @@
 def safe_print_list_integers(my_list=[], x=0):
     count = 0
     for i in range(x):
+        # This will automatically raise IndexError if i >= len(my_list)
         try:
             print("{:d}".format(my_list[i]), end="")
             count += 1
-        except (TypeError, ValueError):
+        except (ValueError, TypeError):
+            # Skip non-integers silently
             continue
-        except IndexError:
-            break
     print()
     return count
