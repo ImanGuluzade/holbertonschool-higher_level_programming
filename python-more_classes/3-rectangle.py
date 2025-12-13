@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """3-rectangle.py
-Defines a Rectangle class with area, perimeter, printing, and representation methods.
+Defines a Rectangle class with width, height, area, perimeter,
+printing (#), and representation methods.
 """
 
 
@@ -57,5 +58,7 @@ class Rectangle:
         return "\n".join(["#" * self.width for _ in range(self.height)])
 
     def __repr__(self):
-        """Return official representation of the Rectangle."""
-        return f"<{self.__class__.__name__} object at {hex(id(self))}>"
+        """Return official representation of the Rectangle with module name."""
+        obj_address = hex(id(self))
+        module_class = f"3-rectangle.{self.__class__.__name__}"
+        return f"<{module_class} object at {obj_address}>"
