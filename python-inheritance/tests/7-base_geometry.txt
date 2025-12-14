@@ -1,0 +1,7 @@
+# 7-base_geometry Test File
+# This file describes the expected behavior of BaseGeometry class.
+
+- BaseGeometry.area() should raise an Exception with message: "area() is not implemented"
+- BaseGeometry.integer_validator(name, value) should:
+    * raise TypeError if value is not an integer with message: "<name> must be an integer"
+    * raise ValueError if value <= 0 with message: "<name> must be greater than 0"
