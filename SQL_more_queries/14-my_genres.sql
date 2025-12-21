@@ -1,7 +1,7 @@
 -- List all genres of the show Dexter
 SELECT g.name
-FROM genres g
+FROM tv_genres g
 JOIN tv_show_genres tg ON g.id = tg.genre_id
-JOIN tv_shows t ON tg.show_id = t.id
+JOIN tv_shows t ON tg.tv_show_id = t.id
 WHERE t.title = 'Dexter'
 ORDER BY g.name ASC;
